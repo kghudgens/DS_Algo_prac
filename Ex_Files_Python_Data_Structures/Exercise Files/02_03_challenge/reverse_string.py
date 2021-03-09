@@ -16,8 +16,7 @@ s = stack.Stack()
 # join the string
 # add it to reversed string
 
-split_string = list(string)
-for i in split_string:
+for i in string:
     s.push(i)
 
 print(s.size())
