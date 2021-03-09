@@ -10,6 +10,20 @@ string = "gninraeL nIdekniL htiw tol a nraeL"
 reversed_string = ""
 s = stack.Stack()
 
-# Your solution here.
+# split the string
+# add each string char to the stack
+# once all added retrieve the strings
+# join the string
+# add it to reversed string
+
+split_string = list(string)
+for i in split_string:
+    s.push(i)
+
+print(s.size())
+
+while not s.is_empty():
+    reversed_string = reversed_string + s.pop()
+
 
 print(reversed_string)
