@@ -21,3 +21,9 @@ def read_maze(file_name):
     except OSError:
         print("There is a problem with the file you have selected.")
         raise SystemExit
+
+
+if __name__ == "__main__":
+    maze = read_maze("mazes/challenge_maze.txt")
+    for row in maze:
+        print(row)
